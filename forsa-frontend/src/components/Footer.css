@@ -1,0 +1,227 @@
+/* Footer.css - Design AP AnnoncePro */
+
+.footer {
+  background-color: #1d3355ff; /* Bleu principal comme dans la navbar */
+  color: white;
+  padding: 40px 0 20px;
+  margin-top: auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Mode sombre */
+.dark-mode .footer {
+  background-color: #1d3355ff;
+}
+
+/* Conteneur principal */
+.footer-main {
+  margin-bottom: 40px;
+}
+
+/* Logo et marque */
+.footer-brand {
+  margin-bottom: 30px;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.logo-square {
+  background: white;
+  color: #1d3355ff;
+  width: 200px;
+  height: 50px;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 30px;
+  margin-right: 12px;
+}
+
+.dark-mode .logo-square {
+  background: #2d4263;
+  color: white;
+}
+
+
+.brand-description {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 300px;
+}
+
+/* Navigation */
+.footer-nav {
+  margin-bottom: 30px;
+}
+
+.footer-nav-title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.footer-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav-list li {
+  margin-bottom: 8px;
+}
+
+.footer-nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.footer-nav-link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Contact */
+.footer-contact {
+  margin-bottom: 30px;
+}
+
+.footer-contact-title {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.footer-contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.contact-icon {
+  margin-right: 10px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.contact-text {
+  flex: 1;
+}
+
+/* Bas du footer */
+.footer-bottom {
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.copyright {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-align: center;
+  justify-content: center;
+}
+/* Layout horizontal pour desktop */
+@media (min-width: 992px) {
+  .footer-main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .footer-brand {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+  
+  .footer-nav,
+  .footer-legal,
+  .footer-contact {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .copyright {
+    text-align: left;
+    margin-bottom: 0;
+  }
+  
+  .footer-extra {
+    text-align: right;
+    margin-top: 0;
+  }
+  
+  .social-media {
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+}
+
+/* Responsive pour tablettes */
+@media (max-width: 991px) and (min-width: 768px) {
+  .footer-brand,
+  .footer-nav,
+  .footer-legal,
+  .footer-contact {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+/* Responsive pour mobiles */
+@media (max-width: 767px) {
+  .footer {
+    padding: 30px 0 15px;
+  }
+  
+  .footer-brand,
+  .footer-nav,
+  .footer-legal,
+  .footer-contact {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+  .brand-logo {
+    justify-content: center;
+  }
+  
+  .contact-item {
+    justify-content: center;
+    text-align: left;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+  }
+  
+  .windows-activate {
+    font-size: 11px;
+  }
+}
